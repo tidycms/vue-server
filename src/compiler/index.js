@@ -150,9 +150,7 @@ var makeTxtNode = function (current, value) {
 };
 
 var getElementId = function () {
-    var result = '';
-    var time = process.hrtime();
-    return String(time[0]) + time[1];
+    return Math.random().toString(36).slice(2);
 };
 
 var bindRE = /^:|^v-bind:/;
